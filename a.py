@@ -1,4 +1,5 @@
 from torch import nn
+import torch
 
 # nn.MultiheadAttention
 # nn.TransformerEncoder
@@ -21,4 +22,11 @@ from torch import nn
 # print(transformer.__all__)
 
 
-nn.Linear
+# nn.Linear
+
+
+model = nn.Conv2d(4, 16, kernel_size=3, stride=1, padding=1)
+
+x = torch.randn(10, 4, 32, 32)
+
+print(model(x).shape)

@@ -17,6 +17,7 @@ from typing import Optional, List, Tuple, Union
 
 from quat_base import _construct_matrix
 
+nn.Conv2d
 
 class _QConvNd(nn.Module):
 
